@@ -31,7 +31,6 @@ export async function getSigner<T = any>(
   return signer;
 }
 
-// Get signature given, address, signer and verifying contract
 export async function getSignature(
   addressToAuthorize: string,
   signer: Wallet | SignerWithAddress,
