@@ -25,7 +25,7 @@ const convexTradeExecutor = "0x3167b932336b029bBFE1964E435889FA8e595738";
 const perpTradeExecutor = "0x675A5c853fc2bc81E0eB79FC45e395d01Bd5D72D";
 const perpPositionHandlerL2 = "0x00fFC95A1A63dbd48A1E7397a3B051eA9E3F5Be9";
 
-export {
+export default {
   accountBalance,
   baseToken,
   batcher,

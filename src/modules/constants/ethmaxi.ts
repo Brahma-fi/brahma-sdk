@@ -13,13 +13,11 @@ const lyraETHOptionMarket = "0x1f6D98638Eee9f689684767C3021230Dd68df419";
 const lyraETHOptionToken = "0xfB1951b7EeF8E7613D3b09424fB4aEf805c16267";
 const lyraGlobals = "0x3856c594D35A24f7435731F9F5d7835887f0B94b";
 const sUSD = "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9";
-const wethL2 = "0x4200000000000000000000000000000000000006";
-const whale = "0xEB89FD3aadf7056C73BEA7A347f96C68404eEeA7";
 const ethOptionMarketView = "0x43592bffCF14f1e0A096091E125f023B2ccC2525";
 const wantTokenL2 = "0x4200000000000000000000000000000000000006";
 const lyraTradeExecutorL1 = "0x0000000000000000000000000000000000000000";
 
-export {
+export default {
   wantTokenL1,
   convexTEInternal,
   vault,
@@ -33,6 +31,4 @@ export {
   sUSD,
   lyraTradeExecutorL1,
   wantTokenL2,
-  wethL2,
-  whale,
 };
