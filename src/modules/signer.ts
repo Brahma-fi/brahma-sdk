@@ -4,10 +4,10 @@ import {BigNumber, Wallet} from "ethers";
 import {hEthers} from "../utils";
 
 // Get a signer object with given object and (optionally) balance
-export async function getSigner(
+export async function getSigner<T>(
   address: string,
   balance?: BigNumber,
-): Promise<SignerWithAddress> {
+): Promise<T> {
   await hre.network.provider.request({
     method: "hardhat_impersonateAccount",
     params: [address],
