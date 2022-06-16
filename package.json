@@ -1,6 +1,6 @@
 {
   "name": "brahma-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Brahma's Contract Development SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,12 @@
     "solidity",
     "contracts",
     "hardhat",
-    "ethers"
+    "ethers",
+    "solc",
+    "evm",
+    "hevm",
+    "truffle",
+    "ganache"
   ],
   "author": "pradeep-selva",
   "license": "MIT",
