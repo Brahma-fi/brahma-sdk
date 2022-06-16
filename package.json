@@ -1,6 +1,6 @@
 {
   "name": "brahma-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brahma's Contract Development SDK",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

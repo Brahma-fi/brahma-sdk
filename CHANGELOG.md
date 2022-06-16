@@ -9,3 +9,7 @@
 ## [1.0.2]
 
 - Keywords updated
+
+## [1.0.3]
+
+- Made address passable to getWETHContract()
