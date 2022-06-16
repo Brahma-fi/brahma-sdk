@@ -60,7 +60,7 @@ The return type is generic for use with any Signer type.
 
 - Getting an instance of WETH contract
 
-`const getWETHContract = async (): Promise<IWETH9>`
+`const getWETHContract = async (address = Addresses.EthMaxi.wantTokenL1): Promise<IWETH9>`
 
 ### 5. Constants
 
