@@ -1,6 +1,7 @@
 import {network} from "hardhat";
 import {BigNumber, BigNumberish} from "ethers";
 
+// Mine a given of blocks
 export const mineBlocks = async (_numberOfBlocks: BigNumberish) => {
   const numberOfBlocks = BigNumber.from(_numberOfBlocks);
 
@@ -9,10 +10,12 @@ export const mineBlocks = async (_numberOfBlocks: BigNumberish) => {
   }
 };
 
+// Set block to that of a certain timestamp
 export const setBlockTime = async (timestamp: number) => {
   await network.provider.send("evm_setNextBlockTimestamp", [timestamp]);
 };
 
+// Switch to any network using a JSON RPC, and optionally, blocknumber
 export async function switchToNetwork(
   jsonRpcUrl: string,
   blockNumber?: number,
