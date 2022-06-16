@@ -5,13 +5,13 @@ This is a contract development SDK to speed up testing, and hardhat related work
 Install using --
 
 ```
-yarn add -D @brahma/sdk
+yarn add -D brahma-sdk
 ```
 
 or
 
 ```
-npm install --save-dev @brahma/sdk
+npm install --save-dev brahma-sdk
 ```
 
 ## Modules
