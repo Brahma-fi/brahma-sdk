@@ -16,10 +16,10 @@ export const setBlockTime = async (timestamp: number) => {
 };
 
 // Switch to any network using a JSON RPC, and optionally, blocknumber
-export async function switchToNetwork(
+export const switchToNetwork = async (
   jsonRpcUrl: string,
   blockNumber?: number,
-) {
+) => {
   await network.provider.request({
     method: "hardhat_reset",
     params: [
@@ -31,4 +31,4 @@ export async function switchToNetwork(
       },
     ],
   });
-}
+};
