@@ -21,8 +21,12 @@
     "url": "https://github.com/Brahma-fi/brahma-sdk"
   },
   "keywords": [
-    "boilerplate",
-    "typescript"
+    "brahma.fi",
+    "sdk",
+    "solidity",
+    "contracts",
+    "hardhat",
+    "ethers"
   ],
   "author": "pradeep-selva",
   "license": "MIT",
