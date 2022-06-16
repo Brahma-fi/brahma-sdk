@@ -1,7 +1,17 @@
+const keeper = "0x55FE002aefF02F77364de339a1292923A15844B8";
+const governance = "0xAE75B29ADe678372D77A8B41225654138a7E6ff1";
+const optimismL1CrossDomainMessenger =
+  "0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1";
+const movrRegistry = "0xc30141B657f4216252dc59Af2e7CdB9D8792e1B0";
+
 export const CommonAddresses = {
   CRV_ADDR: "0xD533a949740bb3306d119CC777fa900bA034cd52",
   CVX_ADDR: "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
   CRVETH: "0x8301AE4fc9c624d1D396cbDAa1ed877821D7C511",
   CVXETH: "0xB576491F1E6e5E62f1d8F26062Ee822B40B0E0d4",
   CRV_3POOL_ZAP: "0xa79828df1850e8a3a3064576f380d90aecdd3359",
+  keeper,
+  governance,
+  optimismL1CrossDomainMessenger,
+  movrRegistry,
 };

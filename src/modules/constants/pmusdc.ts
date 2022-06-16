@@ -7,15 +7,6 @@ const convexTEInternal = {
 
 const wantTokenL1 = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
 const wantTokenL2 = "0x7F5c764cBc14f9669B88837ca1490cCa17c31607";
-const ust3Pool = "0xCEAF7747579696A2F0bb206a14210e3c9e6fB269";
-const curve3PoolZap = "0xA79828DF1850E8a3A3064576f380D90aECDD3359";
-const baseRewardPool = "0x7e2b9B5244bcFa5108A76D5E7b507CFD5581AD4A";
-const convexBooster = "0xF403C135812408BFbE8713b5A23a04b3D48AAE31";
-const keeper = "0x55FE002aefF02F77364de339a1292923A15844B8";
-const governance = "0xAE75B29ADe678372D77A8B41225654138a7E6ff1";
-
-const optimismL1CrossDomainMessenger =
-  "0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1";
 
 const perpVault = "0xAD7b4C162707E0B2b5f6fdDbD3f8538A5fbA0d60";
 const clearingHouse = "0x82ac2CE43e33683c58BE4cDc40975E73aA50f459";
@@ -36,27 +27,20 @@ const perpPositionHandlerL2 = "0x00fFC95A1A63dbd48A1E7397a3B051eA9E3F5Be9";
 
 export {
   accountBalance,
-  baseRewardPool,
   baseToken,
   batcher,
   clearingHouse,
   clearingHouseConfig,
-  convexBooster,
   convexTEInternal,
   convexTradeExecutor,
-  curve3PoolZap,
   exchange,
-  governance,
   harvest,
-  keeper,
   movrRegistry,
-  optimismL1CrossDomainMessenger,
   orderBook,
   perpPositionHandlerL2,
   perpTradeExecutor,
   perpVault,
   quoteTokenvUSDC,
-  ust3Pool,
   vault,
   wantTokenL1,
   wantTokenL2,
