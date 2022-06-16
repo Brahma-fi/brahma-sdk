@@ -3,11 +3,17 @@ import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/signers";
 import {BigNumber, Wallet} from "ethers";
 import {hEthers} from "../utils";
 
-// Get a signer object with given object and (optionally) balance
-export async function getSigner<T>(
-  address: string,
+// Get a signer object with given (optionally) address and (optionally) balance
+// Gets a random signer in case of no address
+export async function getSigner<T = any>(
   balance?: BigNumber,
+  address?: string,
 ): Promise<T> {
+  if (!address) {
+    const privKey = hEthers.utils.randomBytes(32);
+    address = new hEthers.Wallet(privKey).address;
+  }
+
   await hre.network.provider.request({
     method: "hardhat_impersonateAccount",
     params: [address],
