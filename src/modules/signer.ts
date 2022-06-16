@@ -1,11 +1,7 @@
+import hre from "hardhat";
 import {SignerWithAddress} from "@nomiclabs/hardhat-ethers/signers";
 import {BigNumber, Wallet} from "ethers";
-
-// To get hre instance with ethers injected
-require("@nomiclabs/hardhat-ethers");
-require("@nomiclabs/hardhat-waffle");
-
-const hre = require("hardhat");
+import {hEthers} from "../utils";
 
 // Get a signer object with given object and (optionally) balance
 export async function getSigner(
@@ -17,7 +13,7 @@ export async function getSigner(
     params: [address],
   });
 
-  const signer = await hre.ethers.getSigner(address);
+  const signer = await hEthers.getSigner(address);
   await hre.network.provider.request({
     method: "hardhat_setBalance",
     params: [
@@ -53,5 +49,5 @@ export async function getSignature(
   // console.log('signer:', signer.address);
   const signature = await signer._signTypedData(domain, types, value);
   // console.log("eip712 signature", signature);
-  return hre.ethers.utils.hexlify(signature);
+  return hEthers.utils.hexlify(signature);
 }
